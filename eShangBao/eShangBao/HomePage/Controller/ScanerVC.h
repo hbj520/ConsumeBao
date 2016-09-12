@@ -4,7 +4,7 @@
 //
 //  Created by Jeans Huang on 10/19/15.
 //  Copyright © 2015 gzhu. All rights reserved.
-//  chengqi fix
+//  wangqi fix
 
 #import <UIKit/UIKit.h>
 #import "SellerDataModel.h"
