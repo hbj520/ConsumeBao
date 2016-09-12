@@ -1,0 +1,124 @@
+//
+//  eShangBao.pch
+//  eShangBao
+//
+//  Created by doumee on 16/1/13.
+//  Copyright © 2016年 doumee. All rights reserved.
+//
+
+#ifndef eShangBao_pch
+#define eShangBao_pch
+
+/**
+ * \file base64.h
+ **/
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "UIViewController+root.h"
+#import "MJRefresh.h"
+#import "NSString+other.h"
+#import "RequstEngine.h"
+#import "UIImageView+WebCache.h"
+#import "UIAlertView+flash.h"
+#import "HomeModel.h"
+#import "ConsumerModel.h"
+#import "FTPUploadImage.h"
+#import "TBActivityView.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+
+#endif ////__OBJC__
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define DES_SECRET_KEY  @"ABD#-*EY"  //数据加密解密  密钥
+
+
+#define MAINURL @"http://120.27.148.135/consumption_interface/do?c=%@"
+//#define MAINURL @"http://114.215.188.193/consumption_interface_test/do?c=%@"
+//#define MAINURL @"http://192.168.2.8:8016/consumption_interface/do?c=%@"
+
+
+//#define MAINURL @"http://192.168.31.178:8080/consumption_interface/do?c=%@"//杨总调试数据
+
+//#define MAINURL @"http://192.168.1.106:8080/consumption_interface_test/do?c=%@"
+
+#define REQUEST_TIMEOUT 30
+#define kMaxLength 15
+
+
+//FTP参数
+#define ServerUrl @"http://114.215.188.193:8080"
+
+#define FTP_URL @"ftp://115.29.246.75:2122"
+#define FTP_USER_NAME @"divorce"
+#define FTP_PASSWORD @"doumee@#divorce"
+
+//#define FTP_URL @"ftp://114.215.188.193:2122"
+//#define FTP_USER_NAME @"test"
+//#define FTP_PASSWORD @"test@qwert"
+
+
+//请求公共参数
+#define VERSION [[[NSBundle mainBundle] infoDictionary ]objectForKey:@"CFBundleVersion"]//版本号
+#define DEVICE_NUMBER  [[UIDevice alloc] init].identifierForVendor.UUIDString //获取appDeviceNumber
+#define LATITUDE ([[NSUserDefaults standardUserDefaults] objectForKey:@"latitude"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"latitude"])//latitude
+#define LONGITUDE ([[NSUserDefaults standardUserDefaults] objectForKey:@"longitude"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"longitude"])//longitude
+#define USERCITY ([[NSUserDefaults standardUserDefaults] objectForKey:@"userCity"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"userCity"])//userCity
+
+#define USERID ([[NSUserDefaults standardUserDefaults] objectForKey:@"userID"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"userID"])//userID
+#define USERTYPE ([[NSUserDefaults standardUserDefaults] objectForKey:@"userType"]==nil?@"0":[[NSUserDefaults standardUserDefaults] objectForKey:@"userType"])//用户类型
+#define ORDERID ([[NSUserDefaults standardUserDefaults] objectForKey:@"orderId"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"orderId"])//orderId
+
+
+#define GOLDNUM ([[NSUserDefaults standardUserDefaults] objectForKey:@"goldNum"]==nil?@"0":[[NSUserDefaults standardUserDefaults] objectForKey:@"goldNum"])//orderId
+
+#define TYPE ([[NSUserDefaults standardUserDefaults] objectForKey:@"type"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"type"])//type
+#define PAGE ([[NSUserDefaults standardUserDefaults] objectForKey:@"page"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"page"])//page
+#define WHICH ([[NSUserDefaults standardUserDefaults] objectForKey:@"which"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"which"])//page
+#define MEMBERID ([[NSUserDefaults standardUserDefaults] objectForKey:@"memberId"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"memberId"])//memberId
+#define TYPES ([[NSUserDefaults standardUserDefaults] objectForKey:@"types"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"types"])//type
+#define MYSTATUS ([[NSUserDefaults standardUserDefaults] objectForKey:@"partnerAgencyPayStatus"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"partnerAgencyPayStatus"])//mytype//确定会员身份
+#define INVITE ([[NSUserDefaults standardUserDefaults] objectForKey:@"inviteCode"]==nil?@"":[[NSUserDefaults standardUserDefaults] objectForKey:@"inviteCode"])//mytype//邀请码
+//默认图片
+#define DEFAULTIMAGE @"默认商家"//默认一商店商品图片
+#define DEFAULTADVERTISING @"默认banner"  //默认广告图片
+
+#define WIDTH [[UIScreen mainScreen] bounds].size.width
+#define HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define H(X) ((HEIGHT) * ((X) / 568.0))    // 适配屏幕高度（以568为基准iphone5s）
+#define W(X) ((WIDTH) * ((X) / 320.0))     // 适配屏幕宽度（以320为基准iphone5s）
+//相对高度
+#define kLeft(VIEW)                 VIEW.frame.origin.x
+#define kUp(VIEW)                   VIEW.frame.origin.y
+#define kRight(VIEW)                (kLeft(VIEW) + VIEW.frame.size.width)
+#define kWidth(VIEW)                VIEW.frame.size.width
+#define kHeight(VIEW)               VIEW.frame.size.height
+#define kDown(VIEW)                 (VIEW.frame.origin.y + VIEW.frame.size.height)
+
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define KRatioW (([UIScreen mainScreen].bounds.size.width)/320.0)
+#define KRatioH (([UIScreen mainScreen].bounds.size.height)/568.0)
+
+#define SHOWALERTVIEW(msg)   UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];[alertView show];
+
+//随机色
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+//主色调
+#define MAINCOLOR [UIColor colorWithRed:(251)/255.0f green:(73)/255.0f blue:(8)/255.0f alpha:(1)]
+//一般的背景灰色
+#define BGMAINCOLOR [UIColor colorWithRed:(233)/255.0f green:(233)/255.0f blue:(231)/255.0f alpha:(1)]
+//主字体颜色
+#define MAINCHARACTERCOLOR [UIColor colorWithRed:(63)/255.0f green:(62)/255.0f blue:(62)/255.0f alpha:(1)]
+//副字体颜色
+#define GRAYCOLOR [UIColor colorWithRed:(112)/255.0f green:(111)/255.0f blue:(110)/255.0f alpha:(1)]
+#ifdef DEBUG  // 调试阶段
+#define DMLog(...) NSLog(__VA_ARGS__)
+#else // 发布阶段
+#define DMLog(...)
+#endif
+
+#endif /* eShangBao_pch */

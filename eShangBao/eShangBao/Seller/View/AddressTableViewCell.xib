@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BDAddrCell" id="KGk-i7-Jjw" customClass="AddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朱光花园B2号楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU8-d1-kZy">
+                        <rect key="frame" x="31" y="6" width="281" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="D4n-5K-YWN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.2470588235" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马鞍山路啊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-uZ-upV">
+                        <rect key="frame" x="31" y="21" width="281" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="Uub-0C-7v5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1_11" translatesAutoresizingMaskIntoConstraints="NO" id="hy5-Xo-suH">
+                        <rect key="frame" x="8" y="12" width="13" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="Lqg-hV-Td7"/>
+                            <constraint firstAttribute="height" constant="16" id="PTy-fz-Wbd"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dU8-d1-kZy" firstAttribute="leading" secondItem="hy5-Xo-suH" secondAttribute="trailing" constant="10" id="ONo-3d-svO"/>
+                    <constraint firstItem="hy5-Xo-suH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PKW-W5-YTu"/>
+                    <constraint firstItem="hy5-Xo-suH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YJb-mj-hNg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LCb-uZ-upV" secondAttribute="bottom" constant="-1" id="YTQ-uG-I48"/>
+                    <constraint firstItem="dU8-d1-kZy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="atF-es-ji1"/>
+                    <constraint firstItem="dU8-d1-kZy" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gug-qV-8WL"/>
+                    <constraint firstItem="LCb-uZ-upV" firstAttribute="leading" secondItem="hy5-Xo-suH" secondAttribute="trailing" constant="10" id="lbA-9x-5RQ"/>
+                    <constraint firstItem="LCb-uZ-upV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xGY-CE-tMO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="LCb-uZ-upV" id="Jbc-8n-uwc"/>
+                <outlet property="name" destination="dU8-d1-kZy" id="F7t-Yw-aB5"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="173"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="currentCell" id="jzc-ZA-LXZ" customClass="AddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jzc-ZA-LXZ" id="8uJ-da-laJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朱光花园B2号楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZZ-w6-lC7">
+                        <rect key="frame" x="68" y="6" width="244" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="VMf-9F-YGP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.2470588235" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马鞍山路啊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-1A-Ojs">
+                        <rect key="frame" x="31" y="21" width="281" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="p2q-ge-Blf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1_11" translatesAutoresizingMaskIntoConstraints="NO" id="pjR-3B-Cta">
+                        <rect key="frame" x="8" y="12" width="13" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="QD3-Ke-dQA"/>
+                            <constraint firstAttribute="height" constant="16" id="jIP-TO-Gq3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[当前]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-LQ-Sya">
+                        <rect key="frame" x="31" y="6" width="36" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="9Oq-PE-D4b"/>
+                            <constraint firstAttribute="height" constant="13" id="YpW-eI-s3e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.98431372549999996" green="0.28627450980000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pjR-3B-Cta" firstAttribute="leading" secondItem="8uJ-da-laJ" secondAttribute="leadingMargin" id="3UZ-E5-3kh"/>
+                    <constraint firstItem="lZZ-w6-lC7" firstAttribute="trailing" secondItem="8uJ-da-laJ" secondAttribute="trailingMargin" id="FYQ-yZ-CPs"/>
+                    <constraint firstItem="RIh-LQ-Sya" firstAttribute="top" secondItem="8uJ-da-laJ" secondAttribute="topMargin" constant="-2" id="MRY-84-LIi"/>
+                    <constraint firstItem="pjR-3B-Cta" firstAttribute="centerY" secondItem="8uJ-da-laJ" secondAttribute="centerY" id="Oex-fa-UAw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Cql-1A-Ojs" secondAttribute="bottom" constant="-1" id="Vol-oe-l8l"/>
+                    <constraint firstItem="Cql-1A-Ojs" firstAttribute="trailing" secondItem="8uJ-da-laJ" secondAttribute="trailingMargin" id="Z5y-xs-6UZ"/>
+                    <constraint firstItem="lZZ-w6-lC7" firstAttribute="top" secondItem="8uJ-da-laJ" secondAttribute="topMargin" constant="-2" id="hXh-YH-Vo4"/>
+                    <constraint firstItem="Cql-1A-Ojs" firstAttribute="leading" secondItem="pjR-3B-Cta" secondAttribute="trailing" constant="10" id="o1D-Tu-Vxs"/>
+                    <constraint firstItem="lZZ-w6-lC7" firstAttribute="leading" secondItem="pjR-3B-Cta" secondAttribute="trailing" constant="47" id="qgZ-9I-uMw"/>
+                    <constraint firstItem="RIh-LQ-Sya" firstAttribute="leading" secondItem="pjR-3B-Cta" secondAttribute="trailing" constant="10" id="roO-0x-d8b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="currentAddr" destination="Cql-1A-Ojs" id="EAn-na-lTD"/>
+                <outlet property="currentName" destination="lZZ-w6-lC7" id="HWh-HL-49m"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="262"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon1_11" width="17" height="20"/>
+    </resources>
+</document>

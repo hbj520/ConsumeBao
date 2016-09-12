@@ -1,0 +1,17 @@
+//
+//  elseMsgTableViewCell.h
+//  eShangBao
+//
+//  Created by doumee on 16/1/16.
+//  Copyright © 2016年 doumee. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface elseMsgTableViewCell : UITableViewCell
+
+@property (nonatomic,retain)UIImageView * headImg;
+
+@property (nonatomic,retain)UILabel * titleLabel;
+
+@end
