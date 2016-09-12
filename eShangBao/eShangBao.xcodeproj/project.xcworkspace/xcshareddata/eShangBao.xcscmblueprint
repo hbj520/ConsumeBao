@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "42243e59-0bd0-914c-8751-e4797a225e99++1314",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9127F933C52A278BF511642BA1024CB95C86BDEF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "42243e59-0bd0-914c-8751-e4797a225e99++1314" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "42243e59-0bd0-914c-8751-e4797a225e99++1314" : 0
+    "42243e59-0bd0-914c-8751-e4797a225e99++1314" : 0,
+    "9127F933C52A278BF511642BA1024CB95C86BDEF" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CD563EB1-8C09-4491-84B7-4891C11AC9AD",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "42243e59-0bd0-914c-8751-e4797a225e99++1314" : "consumption_ios\/"
+    "42243e59-0bd0-914c-8751-e4797a225e99++1314" : "consumption_ios\/",
+    "9127F933C52A278BF511642BA1024CB95C86BDEF" : "ConsumeBao\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "eShangBao",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.218\/svn\/Code",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "42243e59-0bd0-914c-8751-e4797a225e99++1314"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hbj520\/ConsumeBao.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9127F933C52A278BF511642BA1024CB95C86BDEF"
     }
   ]
 }
